@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Add Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.14"></script>
+</head>
+<body>
+   <!-- Hero Section -->
+<section id="hero">
+    <div class="container hero-content">
+        <h1>Hi, I'm <span class="highlight">Ntobeko</span></h1>
+        <h2>Data Scientist</h2>
+        <a href="Ntobeko_Hlongwa_Resume.pdf" download class="btn">Download CV</a>
+        <a href="#about" class="see-more">
+            <i class="fas fa-chevron-down"></i>
+            <span>See More</span>
+        </a>
+        
+    </div>
+</section>
+
+
+    <!-- Navigation Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myself.jpeg" alt="Photo of Ntobeko">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Data Scientist with a strong background in predictive analytics, machine learning, and data-driven decision-making.
+                        With hands-on experience in developing AI-driven applications and optimizing data workflows to improve business efficiency. Passionate about
+                        leveraging data to solve real-world problems in an increasingly digital world.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Employee Churn</h3>
+                    <p>Built a predictive model to identify employees likely to churn using Python and Azure.</p>
+                </div>
+                <div class="project">
+                    <h3>Contextual Routing</h3>
+                    <p>Developed a Flutter app that provides drivers with contextually safer routes based on location data.</p>
+                </div>
+                <div class="project">
+                    <h3>Windows Bot</h3>
+                    <p>Personal Assistant using C++ for Windows. Jarvis takes user commands, executes them, and responds through voice narration, much like Siri for Windows.</p>
+                </div>
+                <div class="project">
+                    <h3>Loan Default</h3>
+                    <p>Developed a predictive model to assess the likelihood of a borrower defaulting on a loan, comparing AutoML vs bespoke methods for real-time loan default prediction.</p>
+                </div>
+                <div class="project">
+                    <h3>Sales Forecasting</h3>
+                    <p>Built a sales forecasting model using time series analysis to predict future sales trends, helping businesses make data-driven decisions for inventory and strategy planning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1>Skills</h1>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>R</li>
+                <li>SAS</li>
+                <li>Azure</li>
+                <li>Hadoop</li>
+                <li>GCP</li>
+                <li>Power BI</li>
+                <li>TensorFlow</li>
+                <li>Scikit-learn</li>
+                <li>Flutter</li>
+                <li>Teradata</li>
+                <li>LLMs</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="contact-form-container">
+            <form name="submit-to-google-sheet" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <span id="msg"></span>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer Section -->
+<footer>
+    <div class="container footer-content">
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/ntobeko-hlongwa-67a810202/" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
+            </li>
+            <li><a href="mailto:hlongwa860@gmail.com"> 
+                <img src="images/email-icon.png" alt="Email" class="social-icon">
+            </a></li>
+            <li><a href="https://github.com/ntobeko860" target="_blank">
+                <img src="images/github-icon.png" alt="GitHub" class="social-icon"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+    <!-- Add Typing Effect JavaScript -->
+    <script>
+        var options = {
+            strings: ["Data Scientist", "Developer", "AI Enthusiast"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            backDelay: 2000,
+            loop: true
+        };
+
+        var typed = new Typed("#typed-text", options);
+    </script>
+</body>
+</html>
